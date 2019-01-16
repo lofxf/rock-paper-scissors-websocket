@@ -16,4 +16,10 @@ git clone https://github.com/lofxf/rock-paper-scissors-websocket.git
 # enter the root path of rock-paper-scissors-websocket
 sudo docker-compose up
 ```
+3. Check the application at http://127.0.0.1:8080/
 
+## game rules
+
+1. Open http://127.0.0.1:8080/ and enter a name, then you will join the game.
+2. When there have more than 2 players the game will begin.
+3. The computer play a role of referee, so there is no need extra referee.
