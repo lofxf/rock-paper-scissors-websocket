@@ -21,5 +21,5 @@ sudo docker-compose up
 ## Game Rules
 
 1. Open http://127.0.0.1:8080/ and enter a name, then you will join the game.
-2. When there have more than 2 players the game will begin.
+2. When there are more than 2 players the game will begin.
 3. The computer play a role of referee, so there is no need extra referee.
