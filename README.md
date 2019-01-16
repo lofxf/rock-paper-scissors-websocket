@@ -18,7 +18,7 @@ sudo docker-compose up
 ```
 3. Check the application at http://127.0.0.1:8080/
 
-## game rules
+## Game Rules
 
 1. Open http://127.0.0.1:8080/ and enter a name, then you will join the game.
 2. When there have more than 2 players the game will begin.
