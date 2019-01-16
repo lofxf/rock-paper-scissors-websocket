@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Rock Paper Scissors WebSocket Demo</title>
+      <link rel="stylesheet" href="/css/main.css" />
+      <link rel="stylesheet" href="/css/bootstrap.css" />
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    <div class="alert alert-warning alert-dismissible lost-message hidden" role="alert">
+        <strong>You Lost!</strong>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible win-message hidden" role="alert">
+        <strong>You Win, Wait Another Player For 5s!</strong>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible win-final-message hidden" role="alert">
+        <strong>You Win Finally!</strong>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible begin-message hidden" role="alert">
+        <strong>Begin!</strong>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible draw-message hidden" role="alert">
+        <strong>End In A Draw!</strong>
+    </div>
+
+    <div>
+        <h3 class="player hidden"></h3>
+    </div>
+
+    <div id="username-page">
+        <div class="username-page-container">
+            <h1 class="title">Enter your username</h1>
+            <form id="usernameForm" name="usernameForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="username" autocomplete="off" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="accent username-submit">Start Play</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="play-page" class="hidden">
+        <div class="play-container">
+            <div class="play-header">
+                <h2>Rock Paper Scissors</h2>
+                <strong>online player: </strong>
+                <strong id="online-player">0</strong>
+            </div>
+            <div class="connecting">
+                Connecting...
+            </div>
+            <ul id="messageArea">
+
+            </ul>
+            <div id="buttonArea" class="button-group hidden">
+                <button id="rock" type="submit" class="primary">Rock</button>
+                <button id="paper" type="submit" class="primary">Paper</button>
+                <button id="scissors" type="submit" class="primary">Scissors</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/sockjs.min.js"></script>
+    <script src="/js/stomp.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>
