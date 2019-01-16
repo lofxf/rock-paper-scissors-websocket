@@ -2,14 +2,18 @@
 
 ## Requirements
 
-1. Java - 1.8.X
-2. Maven - 3.X.X
-3. Docker
+1. Docker
+2. docker-compose
 
 ## Steps to Setup
 
 1. Clone the application
-```bash
+```
 git clone https://github.com/lofxf/rock-paper-scissors-websocket.git
 ```
-2. 
+2. Build and start application
+```
+# enter the root path of rock-paper-scissors-websocket
+sudo docker-compose up
+```
+
